@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ✅ Base Theme: DayNight compatible -->
+    <style name="Base.Theme.FaceAttendanceApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your light & dark theme colors -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/black</item>
+
+
+
+
+
+        <!-- Optional UI tweaks -->
+        <item name="android:statusBarColor" tools:targetApi="l">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <!-- ✅ Actual theme applied via Manifest -->
+    <style name="Theme.FaceAttendanceApp" parent="Base.Theme.FaceAttendanceApp" />
+
+</resources>

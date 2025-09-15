@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="?android:colorBackground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leave Application"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/orange"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="30dp" />
+
+        <!-- From Date -->
+        <EditText
+            android:id="@+id/fromDateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="From Date (YYYY-MM-DD)"
+            android:focusable="false"
+            android:inputType="none"
+            android:padding="12dp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:textColor="?android:textColorPrimary"
+            android:textColorHint="?android:textColorHint" />
+
+        <!-- To Date -->
+        <EditText
+            android:id="@+id/toDateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="To Date (YYYY-MM-DD)"
+            android:focusable="false"
+            android:inputType="none"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:textColor="?android:textColorPrimary"
+            android:textColorHint="?android:textColorHint" />
+
+        <!-- Leave Type Spinner -->
+        <Spinner
+            android:id="@+id/leaveTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:padding="12dp"
+            android:background="?android:selectableItemBackground" />
+
+        <!-- Reason -->
+        <EditText
+            android:id="@+id/reasonEditText"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:gravity="top"
+            android:hint="Reason for Leave"
+            android:inputType="textMultiLine"
+            android:padding="12dp"
+            android:textColor="?android:textColorPrimary"
+            android:textColorHint="?android:textColorHint" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="?attr/colorPrimary"
+            android:text="Submit Leave"
+            android:textColor="?android:textColorPrimaryInverse" />
+
+        <!-- Leave History Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📋 Leave History"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="?android:textColorPrimary"
+            android:layout_marginTop="24dp" />
+
+        <!-- Fixed-height RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/leaveHistoryRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"
+            android:contentDescription="Leave application history list"/>
+    </LinearLayout>
+</ScrollView>
+
+

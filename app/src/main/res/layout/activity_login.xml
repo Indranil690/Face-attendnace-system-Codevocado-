@@ -1,0 +1,88 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- ✅ Logo -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/logo"
+            android:paddingTop="20dp" />
+
+        <!-- ✅ App Title -->
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="@string/app_title_styled" />
+
+        <!-- ✅ Employee ID field -->
+        <EditText
+            android:id="@+id/editEmployeeId"
+            android:hint="Employee ID"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- ✅ Password field -->
+        <EditText
+            android:id="@+id/editPassword"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- 🔐 Forgot Password -->
+        <TextView
+            android:id="@+id/forgotPasswordText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password"
+            android:textColor="?android:textColorLink"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="end"
+            android:paddingEnd="4dp" />
+
+        <!-- ✅ Login button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="Login"
+            android:minHeight="48dp"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/buttonGreen"
+            android:textColor="@color/white" />
+
+        <!-- ✅ Sign up button -->
+        <Button
+            android:id="@+id/btnSignup"
+            android:text="Sign Up"
+            android:minHeight="48dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/buttonGreen"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/editTextEmpId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:hint="Enter Employee ID"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:paddingLeft="10dp"
+        android:textColor="?android:textColorPrimary"
+        android:textColorHint="?android:textColorHint" />
+
+    <EditText
+        android:id="@+id/editTextTotalLeaves"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:hint="Enter Total Leaves"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:paddingLeft="10dp"
+        android:textColor="?android:textColorPrimary"
+        android:textColorHint="?android:textColorHint"
+        android:layout_marginTop="12dp" />
+</LinearLayout>

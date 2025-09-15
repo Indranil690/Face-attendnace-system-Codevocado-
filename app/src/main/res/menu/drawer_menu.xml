@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"
+        android:icon="@android:drawable/ic_lock_power_off" />
+
+    <item
+        android:id="@+id/nav_change_password"
+        android:title="Change Password"
+        android:icon="@android:drawable/ic_lock_lock" />
+
+    <item
+        android:id="@+id/nav_toggle_theme"
+        android:title="Dark Mode"
+        android:icon="@drawable/ic_dark_mode" />
+
+</menu>

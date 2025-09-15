@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- 🟢 Title -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Leave Application"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorSecondary"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:paddingTop="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextFromDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="From Date (YYYY-MM-DD)"
+        android:focusable="false"
+        android:inputType="none"
+        android:drawableEnd="@android:drawable/ic_menu_today" />
+
+    <EditText
+        android:id="@+id/editTextToDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="To Date (YYYY-MM-DD)"
+        android:focusable="false"
+        android:inputType="none"
+        android:drawableEnd="@android:drawable/ic_menu_today"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:id="@+id/editTextReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Reason"
+        android:minLines="3"
+        android:gravity="top"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/buttonSubmitLeave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Leave"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#FFF" />
+</LinearLayout>

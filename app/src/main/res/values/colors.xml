@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryGreen">#2E7D32</color>         <!-- Dark Green -->
+    <color name="accentOrange">#FF5722</color>        <!-- Bright Orange -->
+    <color name="buttonGreen">#58E75D</color>         <!-- Lighter green for buttons -->
+    <color name="lightGray">#F5F5F5</color>           <!-- Light background -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="textHint">#888888</color>
+    <color name="colorPrimary">#2E7D32</color>       <!-- Dark Green -->
+    <color name="colorSecondary">#FF5722</color>     <!-- Orange -->
+    <color name="dark_green">#2E7D32</color>
+    <color name="orange">#FF5722</color> <!-- Add this to fix theme crash -->
+
+
+
+
+</resources>

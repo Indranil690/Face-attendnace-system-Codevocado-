@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">FaceAttendanceApp</string>
+
+    <string name="app_title_styled">
+        <![CDATA[
+            <font color=\u0027#FF5722\u0027>Codevocado</font> <font color=\u0027#2E7D32\u0027>Face Attendance</font>
+        ]]>
+    </string>
+
+    <string name="dashboard_title_styled"><![CDATA[
+        <font color=\u0027#FF5722\u0027>Codevocado</font> <font color=\u0027#2E7D32\u0027>Dashboard</font>
+    ]]></string>
+
+    <!-- ✅ New dual-color Admin Dashboard title -->
+    <string name="admin_dashboard_title_styled">
+        <![CDATA[
+            <font color=\u0027#FF5722\u0027>Admin</font> <font color=\u0027#2E7D32\u0027>Dashboard</font>
+        ]]>
+    </string>
+
+    <string name="navigation_drawer_open">Open navigation</string>
+    <string name="navigation_drawer_close">Close navigation</string>
+
+    <!-- ✅ Month dropdown list for Monthly Report -->
+    <string-array name="months_array">
+        <item>January 2025</item>
+        <item>February 2025</item>
+        <item>March 2025</item>
+        <item>April 2025</item>
+        <item>May 2025</item>
+        <item>June 2025</item>
+        <item>July 2025</item>
+        <item>August 2025</item>
+        <item>September 2025</item>
+        <item>October 2025</item>
+        <item>November 2025</item>
+        <item>December 2025</item>
+    </string-array>
+</resources>

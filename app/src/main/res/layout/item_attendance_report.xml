@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/summary_box_bg"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee Name"
+        android:textStyle="bold"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvEmpId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID: E001"
+        android:textColor="?android:textColorSecondary"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvDept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dept: HR"
+        android:textColor="?android:textColorSecondary"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvInTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="In: 09:15 AM"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvOutTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Out: 06:00 PM"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="14sp" />
+</LinearLayout>

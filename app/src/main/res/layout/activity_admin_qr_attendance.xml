@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".QRAttendanceActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="QR Attendance"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:paddingTop="20dp"/>
+
+    <ImageButton
+        android:id="@+id/btnSwitchCamera"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Switch Camera"
+        android:src="@drawable/ic_switch_camera"
+        app:tint="@color/colorSecondary" />
+
+
+
+    <!-- Barcode Scanner View -->
+
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/barcode_scanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="477dp"
+        android:layout_above="@id/tvScanStatus"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="123dp" />
+    <!-- Upload from Gallery Button -->
+    <Button
+        android:id="@+id/btnUploadQR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload from Gallery"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/tvScanStatus"
+        android:layout_marginBottom="30dp"
+        android:padding="12dp" />
+
+
+    <!-- Scan Status -->
+    <TextView
+        android:id="@+id/tvScanStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="68dp"
+        android:text="Point camera at QR code"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray" />
+
+</RelativeLayout>
