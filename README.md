@@ -1,4 +1,4 @@
-# Face-attendnace-system-Codevocado-
+# Face-attendnace-system (Codevocado)
 
 A **Face-based Smart Attendance System** built with Android Studio, designed for organizations to simplify and automate attendance management.  
 The app leverages **Google ML Kit** for live face detection, GPS for location verification, and REST APIs for secure backend integration.  
